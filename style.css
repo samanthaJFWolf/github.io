@@ -1,0 +1,260 @@
+/* Basic styles for Samantha Jane Tie Dye replica site */
+
+/* Import a condensed sans‑serif font for a similar feel */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.5;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Top promo bar at the very top of the page */
+.top-bar {
+  background-color: #f71ecb;
+  color: #fff;
+  text-align: center;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+/* Main navigation styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav .logo img {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+  color: #f71ecb;
+}
+
+/* Hero section with background image */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0 0 10px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.hero .cta-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #f71ecb;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.hero .cta-btn:hover {
+  background-color: #d60db1;
+}
+
+/* Signup promo section */
+.signup-section {
+  padding: 40px 20px;
+  background-color: #111;
+  text-align: center;
+}
+
+.signup-section h2 {
+  color: #f71ecb;
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+}
+
+.signup-section form {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.signup-section input[type="email"] {
+  padding: 10px;
+  width: 300px;
+  max-width: 80%;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+}
+
+.signup-section button {
+  padding: 10px 20px;
+  background-color: #f71ecb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.signup-section button:hover {
+  background-color: #d60db1;
+}
+
+/* About and contact pages */
+.about-section,
+.contact-section {
+  padding: 60px 20px;
+  background-color: #000;
+}
+
+.about-section h1,
+.contact-section h1 {
+  color: #f71ecb;
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.about-content .image,
+.about-content .text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-content .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-content .text h3 {
+  color: #f71ecb;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.about-content .text p {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+/* Contact form styling */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #111;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  background-color: #f71ecb;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #d60db1;
+}
+
+/* Footer styling */
+footer {
+  background-color: #111;
+  color: #777;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 0.85rem;
+}
